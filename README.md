@@ -7,7 +7,7 @@ This API provides a powerful and flexible solution for web data extraction and L
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/llm-web-scraping-api.git
+   git clone https://github.com/developersdigest/llm-web-scraping-api.git
    cd llm-web-scraping-api
    ```
 2. Install dependencies:
