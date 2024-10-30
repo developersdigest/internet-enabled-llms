@@ -20,20 +20,15 @@ This API provides a powerful and flexible solution for web data extraction and L
 
 ## Getting Started
 
-### Prerequisites
-- Node.js (v14 or later)
-- NPM or Yarn
-- A set of API keys for Firecrawl, NotDiamond, OpenAI, Anthropic, Google, and Serper.
-
 ### Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/developersdigest/llm-web-scraping-api.git
+   git clone https://github.com/your-username/llm-web-scraping-api.git
    cd llm-web-scraping-api
    ```
 2. Install dependencies:
    ```sh
-   npm install
+   bun install
    ```
 3. Create a `.env` file in the root directory and add your API keys:
    ```env
@@ -48,7 +43,7 @@ This API provides a powerful and flexible solution for web data extraction and L
 ### Running the Server
 To start the server, run:
 ```sh
-npm run dev
+bun dev
 ```
 This will start the server in development mode using Next.js.
 
@@ -124,3 +119,4 @@ Contributions are welcome! If you find any issues or have suggestions, feel free
 
 ## License
 This project is licensed under the MIT License.
+
