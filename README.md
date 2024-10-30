@@ -1,22 +1,6 @@
 # LLM-Powered Web Scraping and Context API
 
-This API provides a powerful and flexible solution for web data extraction and LLM-powered question answering. It uses multiple integrations, including Firecrawl, OpenAI, NotDiamond, and Serper, to collect, process, and provide relevant information from web pages, enhancing user queries with contextual data. The solution leverages embeddings for more accurate results and aims to minimize the inclusion of social media content.
-
-## Table of Contents
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Environment Variables](#environment-variables)
-- [Endpoints](#endpoints)
-  - [POST Request](#post-request)
-- [Detailed Flow](#detailed-flow)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Features
-- **Web Search & Scraping**: Uses Serper for web search and Firecrawl for scraping content.
-- **Embeddings Integration**: Offers optional embedding processing for more precise semantic search.
-- **LLM Query Handling**: Utilizes models from OpenAI, Anthropic, and Google to generate an answer based on the extracted context.
-- **Flexible Content Processing**: Ability to skip embeddings and directly work with raw scraped content.
+This API provides a powerful and flexible solution for web data extraction and LLM-powered question answering. It uses multiple integrations, including Firecrawl, OpenAI, Not Diamond, and Serper, to collect, process, and provide relevant information from web pages, enhancing user queries with contextual data. 
 
 ## Getting Started
 
@@ -51,15 +35,15 @@ This will start the server in development mode using Next.js.
 The API requires the following environment variables:
 - `FIRECRAWL_API_KEY` - Firecrawl API key for web scraping.
 - `NOTDIAMOND_API_KEY` - NotDiamond API key for LLM handling.
-- `OPENAI_API_KEY` - OpenAI API key for embeddings and LLM.
-- `ANTHROPIC_API_KEY` - Anthropic API key for LLM.
-- `GOOGLE_API_KEY` - Google API key for LLM.
+- `OPENAI_API_KEY` - OpenAI API key for embeddings and LLMs.
+- `ANTHROPIC_API_KEY` - Anthropic API key for LLMs.
+- `GOOGLE_API_KEY` - Google API key for LLMs.
 - `SERPER_API_KEY` - Serper API key for web search.
 
 ## Endpoints
 
 ### POST Request
-- **URL**: `/api`
+- **URL**: `/api/llm/`
 - **Method**: `POST`
 - **Description**: Processes a user message, searches for relevant pages, scrapes the content, optionally uses embeddings, and then provides an LLM-powered response.
 
@@ -111,11 +95,8 @@ Example Response:
 1. **Request Parsing**: Extract the user query and validate the request.
 2. **Web Search & Filtering**: Search using Serper and filter out unsupported domains (e.g., social media).
 3. **Scraping & Content Processing**: Scrape relevant content from filtered URLs and optionally create embeddings.
-4. **LLM Query Handling**: Generate an answer using one of the LLMs (OpenAI, Anthropic, or Google).
+4. **LLM Query Handling**: Generate an answer using one of the LLMs (OpenAI, Anthropic, or Gemini).
 5. **Return the Response**: Send the answer along with source and model information.
-
-## Contributing
-Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or submit a pull request.
 
 ## License
 This project is licensed under the MIT License.
