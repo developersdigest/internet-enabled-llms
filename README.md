@@ -1,4 +1,4 @@
-# LLM-Powered Web Scraping and Context API
+# Internet-Enabled LLMs
 
 This API provides a powerful and flexible solution for web data extraction and LLM-powered question answering. It uses multiple integrations, including Firecrawl, OpenAI, Not Diamond, and Serper, to collect, process, and provide relevant information from web pages, enhancing user queries with contextual data. 
 
