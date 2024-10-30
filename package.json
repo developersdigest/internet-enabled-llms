@@ -9,9 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mendable/firecrawl-js": "^1.7.2",
+    "langchain": "^0.3.5",
+    "notdiamond": "^1.0.8",
+    "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "next": "15.0.2"
+    "react-dom": "19.0.0-rc-02c0e824-20241028"
   },
   "devDependencies": {
     "typescript": "^5",
